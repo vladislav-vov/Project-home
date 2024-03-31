@@ -1,10 +1,10 @@
 body {
   background-color: #fff;
-  color: $textColor;
+  color: $primaryColor;
   font-family: $fontFamily, sans-serif;
-  font-weight: 400;
   font-size: $fontSize + px;
-  line-height: 24px;
+  font-weight: 300;
+  line-height: percent(25, $fontSize);
   overflow-x: hidden;
 }
 

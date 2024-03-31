@@ -1,0 +1,131 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  @include adaptiveValue('padding-bottom', 120, 60);
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr percent(770, $containerWidth);
+    justify-content: space-between;
+    flex: 1 1 auto;
+
+    @media (max-width: $mobile) {
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @media (min-width: $mobile) {
+      padding: 50px 0 100px;
+      gap: 90px;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__slider {
+    width: 100%;
+  }
+
+  &__slide {
+    position: relative;
+    aspect-ratio: 770/829;
+  }
+
+  &__slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__slide-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__slider-controls {
+    display: flex;
+    gap: 20px;
+
+    @media (min-width: $mobile) {
+      flex-direction: column;
+      gap: 90px;
+    }
+  }
+
+  &__slider-triggers {
+    position: relative;
+    background-color: #fff;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(0, -50%);
+      width: 100%;
+      height: 1px;
+      background-color: $borderColor;
+    }
+
+    @media (max-width: $mobile) {
+      flex: 1 1 auto;
+    }
+  }
+
+  &__btns {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    z-index: 1;
+  }
+
+  &__slider-prev,
+  &__slider-next {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid $borderColor;
+    z-index: 1;
+    transition: background-color 0.3s ease-in-out;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $btnHoverColor;
+      }
+    }
+  }
+
+  &__slider-count {
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+    color: #e0e0e0;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  &__slider-current,
+  &__slider-total {
+    color: $tertiaryColor;
+  }
+}

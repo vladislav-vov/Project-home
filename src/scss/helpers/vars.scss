@@ -1,7 +1,14 @@
-$fontFamily: '';
-$fontSize: 14;
+$fontFamily: 'TT Hoves';
+$fontSize: 16;
 
-$maxWidthContainer: 1240;
+$primaryColor: #000;
+$secondaryColor: #333;
+$tertiaryColor: #bdbdbd;
+$bgColor: #2c2c2c;
+$borderColor: #f2f2f2;
+$btnHoverColor: #f9f9f9;
+
+$maxWidthContainer: 1170;
 $minWidth: 375;
 $containerPadding: 30;
 $containerWidth: $maxWidthContainer + $containerPadding;
