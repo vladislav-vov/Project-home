@@ -387,12 +387,139 @@
   }
 
   &__btn {
-    display: flex;
-    max-width: max-content;
     margin-left: auto;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       margin: 0 auto;
     }
+  }
+}
+
+.contacts {
+  @include adaptiveValue('margin-bottom', 120, 60);
+
+  &__title {
+    margin-bottom: 20px;
+
+    @media (max-width: $tablet) {
+      text-align: center;
+    }
+  }
+
+  &__inner {
+    @media (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: percent(391, $maxWidthContainer) percent(
+          749,
+          $maxWidthContainer
+        );
+      gap: 30px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media (max-width: $tablet) {
+      max-width: 580px;
+      margin: 0 auto 30px;
+    }
+  }
+
+  &__form-input,
+  &__form-textarea {
+    padding: 15px 20px;
+    background-color: #f3f3f3;
+    color: #8d8d8d;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: percent(17, 14);
+    letter-spacing: calc(1em / 25);
+  }
+
+  &__form-textarea {
+    min-height: 147px;
+    resize: none;
+  }
+
+  &__img {
+    height: 369px;
+
+    @media (max-width: $tablet) {
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      aspect-ratio: 749/369;
+    }
+  }
+
+  &__form-agree {
+    margin: 10px 0;
+  }
+}
+
+.contacts-form-agree {
+  position: relative;
+
+  @media (max-width: em($mobile)) {
+    margin: 0 auto;
+  }
+
+  &__checkbox {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #f3f3f3;
+    user-select: none;
+    border-radius: 2px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__input:focus ~ &__checkmark {
+    border: 1px solid $borderColor;
+  }
+
+  &__input:checked ~ &__checkmark {
+    opacity: 1;
+  }
+
+  &__label {
+    display: inline-block;
+    padding-left: 38px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: percent(17, 14);
+    letter-spacing: calc(1em / 33);
   }
 }
