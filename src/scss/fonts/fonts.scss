@@ -1,36 +1,35 @@
 @font-face {
-  font-family: TT Hoves;
-  font-display: swap;
-  src:
-    url('../fonts/TT Hoves Bold.woff2') format('woff2'),
-    url('../fonts/TT Hoves Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
+	font-family: SF Pro Display;
+	font-display: swap;
+	src: url("../fonts/SF Pro Display-Bold.woff2") format("woff2"), url("../fonts/SF Pro Display-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
 }
 @font-face {
-  font-family: TT Hoves;
-  font-display: swap;
-  src:
-    url('../fonts/TT Hoves Light.woff2') format('woff2'),
-    url('../fonts/TT Hoves Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
+	font-family: TT Hoves;
+	font-display: swap;
+	src: url("../fonts/TT Hoves-Bold.woff2") format("woff2"), url("../fonts/TT Hoves-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
 }
 @font-face {
-  font-family: TT Hoves;
-  font-display: swap;
-  src:
-    url('../fonts/TT Hoves Medium.woff2') format('woff2'),
-    url('../fonts/TT Hoves Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
+	font-family: TT Hoves;
+	font-display: swap;
+	src: url("../fonts/TT Hoves-Light.woff2") format("woff2"), url("../fonts/TT Hoves-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
 }
 @font-face {
-  font-family: TT Hoves;
-  font-display: swap;
-  src:
-    url('../fonts/TT Hoves Regular.woff2') format('woff2'),
-    url('../fonts/TT Hoves Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
+	font-family: TT Hoves;
+	font-display: swap;
+	src: url("../fonts/TT Hoves-Regular.woff2") format("woff2"), url("../fonts/TT Hoves-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: TT Hoves;
+	font-display: swap;
+	src: url("../fonts/TT Hoves-Medium.woff2") format("woff2"), url("../fonts/TT Hoves-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
 }

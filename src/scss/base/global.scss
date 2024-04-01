@@ -6,6 +6,12 @@ body {
   font-weight: 300;
   line-height: percent(25, $fontSize);
   overflow-x: hidden;
+
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+    overscroll-behavior: none;
+  }
 }
 
 img {

@@ -59,12 +59,6 @@
         transform: translate(0, -50%);
       }
       .menu-open & {
-        span,
-        &::before,
-        &::after {
-          background-color: #fff;
-        }
-
         span {
           transform: scale(0);
         }
@@ -72,12 +66,12 @@
         &::before {
           top: 50%;
           width: 100%;
-          transform: rotate(-45deg);
+          transform: translate(0, -50%) rotate(-45deg);
         }
         &::after {
           bottom: 50%;
           width: 100%;
-          transform: rotate(45deg);
+          transform: translate(0, 50%) rotate(45deg);
         }
       }
     }
@@ -94,6 +88,11 @@
       background-color: #fff;
       overflow-y: scroll;
       z-index: 10;
+      transition: left 0.3s ease-in-out;
+
+      .menu-open & {
+        left: 0;
+      }
     }
   }
 
