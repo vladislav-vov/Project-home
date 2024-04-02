@@ -192,15 +192,15 @@
 		<div class="container">
 			<h2 class="contacts__title title">Связаться с нами</h2>
 			<div class="contacts__inner">
-				<form action="#" class="contacts__form">
-					<input type="text" class="contacts__form-input" placeholder="Имя">
-					<input type="text" class="contacts__form-input" placeholder="Номер телефона*">
-					<input type="text" class="contacts__form-input" placeholder="E-mail*">
-					<input type="text" class="contacts__form-input" placeholder="Интересующий товар/услуга">
-					<textarea class="contacts__form-textarea" placeholder="Сообщение*"></textarea>
+				<form action="/applications" class="contacts__form">
+					<input type="text" name="name" class="contacts__form-input" placeholder="Имя">
+					<input type="text" name="phone" class="contacts__form-input" placeholder="Номер телефона*" required>
+					<input type="text" name="email" class="contacts__form-input" placeholder="E-mail*" required>
+					<input type="text" name="offer" class="contacts__form-input" placeholder="Интересующий товар/услуга">
+					<textarea name="message" class="contacts__form-textarea" placeholder="Сообщение*" required></textarea>
 					<div class="contacts__form-agree contacts-form-agree">
 						<div class="contacts-form-agree__checkbox">
-							<input type="checkbox" name="agree" id="agree" class="contacts-form-agree__input">
+							<input type="checkbox" name="agree" id="agree" class="contacts-form-agree__input" required>
 							<span class="contacts-form-agree__checkmark">
 								<svg width="13" height="10">
 									<use xlink:href="@img/icons/icons.svg#check"></use>
@@ -222,6 +222,89 @@
 			</div>
 		</div>
 	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__top">
+				<div class="footer__col">
+					<a href="#">
+						<img src="@img/logo-light.png" alt="Logo">
+					</a>
+				</div>
+				<div class="footer__col-mid">
+					<div class="footer__col">
+						<h5 class="footer__title">Информация</h5>
+						<ul class="footer__list">
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Главная</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Галерея</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Проекты</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Сертификаты</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h5 class="footer__title">Контакты</h5>
+						<ul class="footer__list">
+							<li class="footer__list-item">
+								<img src="@img/icons/map.svg" alt="Map marker">
+								<a href="#" class="footer__list-link">
+									100000, Республика Казахстан, <br>
+									г. Караганда, ул. Телевизионная 10
+								</a>
+							</li>
+							<li class="footer__list-item">
+								<img src="@img/icons/phone.svg" alt="Phone">
+								<a href="tel:+380000000000" class="footer__list-link">+38 (000) 000 00 00</a>
+							</li>
+							<li class="footer__list-item">
+								<img src="@img/icons/mail.svg" alt="Envelope">
+								<a href="mailto:mail@gmail.com" class="footer__list-link">mail@gmail.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__col">
+					<h5 class="footer__title">Информация</h5>
+					<ul class="footer__social">
+						<li>
+							<a href="#" class="footer__social-link">
+								<img src="@img/icons/facebook.svg" alt="Facebook">
+							</a>
+						</li>
+						<li>
+							<a href="#" class="footer__social-link">
+								<img src="@img/icons/twitter.svg" alt="Twitter">
+							</a>
+						</li>
+						<li>
+							<a href="#" class="footer__social-link">
+								<img src="@img/icons/linked-in.svg" alt="Linked In">
+							</a>
+						</li>
+						<li>
+							<a href="#" class="footer__social-link">
+								<img src="@img/icons/pinterest.svg" alt="Pinterest">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<p class="footer__copy">&copy; 2019 Digital Project. Все права защищены.</p>
+			</div>
+		</div>
+	</footer>
 
 	@@include('html/_footer.html')
 

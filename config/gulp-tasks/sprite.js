@@ -34,7 +34,7 @@ export const sprite = () => {
       cheerio({
         run: ($) => {
           $('path').removeAttr('fill');
-          // $('g').removeAttr('fill');
+          $('g').removeAttr('fill');
         },
         parserOptions: { xmlMode: true },
       }),

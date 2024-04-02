@@ -40,10 +40,18 @@
     svg {
       fill: #fff;
     }
+
+    @media (any-hover: hover) {
+      transition: opacity 0.3s ease-in-out;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
 
   @media (any-hover: hover) {
-    &:hover {
+    &:not(.button--dark):hover {
       background-color: $btnHoverColor;
     }
   }
