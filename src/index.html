@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Home"
+})
+
+<body>
+	<section class="promo">
+		@@include('html/_header.html')
+		<div class="promo__container">
+			<div class="promo__content">
+				<h1 class="promo__title title">PROJECT <span>HOME</span></h1>
+				<div class="promo__slider-controls">
+					<div class="promo__slider-triggers">
+						<div class="promo__btns">
+							<button type="button" class="promo__slider-prev">
+								<svg width="24" height="24">
+									<use xlink:href="@img/icons/icons.svg#arrow-left"></use>
+								</svg>
+							</button>
+							<button type="button" class="promo__slider-next">
+								<svg width="24" height="24">
+									<use xlink:href="@img/icons/icons.svg#arrow-right"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="promo__slider-count">
+						<span class="promo__slider-current">01</span>
+						/
+						<span class="promo__slider-total">02</span>
+					</div>
+				</div>
+			</div>
+			<div class="promo__slider swiper">
+				<div class="swiper-wrapper">
+					<div class="promo__slide swiper-slide">
+						<img class="promo__slide-img" src="@img/slide.jpeg" alt="Slide">
+						<a href="#" class="promo__slide-btn button">
+							ВЗГЛЯНУТЬ
+							<svg width="24" height="24">
+								<use xlink:href="@img/icons/icons.svg#arrow-right"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="promo__slide swiper-slide">
+						<img class="promo__slide-img" src="@img/slide.jpeg" alt="Slide">
+						<a href="#" class="promo__slide-btn button">
+							ВЗГЛЯНУТЬ
+							<svg width="24" height="24">
+								<use xlink:href="@img/icons/icons.svg#arrow-right"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="promo__slide swiper-slide">
+						<img class="promo__slide-img" src="@img/slide.jpeg" alt="Slide">
+						<a href="#" class="promo__slide-btn button">
+							ВЗГЛЯНУТЬ
+							<svg width="24" height="24">
+								<use xlink:href="@img/icons/icons.svg#arrow-right"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about">
+		<div class="container">
+			<div class="about__inner">
+				<div class="about__content">
+					<h2 class="title">О компании</h2>
+					<div>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+							industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+							scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+							electronic typesetting, remaining essentially unchanged.</p>
+					</div>
+					<a href="#" class="button">
+						ЧИТАТЬ
+						<svg width="24" height="24">
+							<use xlink:href="@img/icons/icons.svg#arrow-right"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="about__images">
+					<img class="about__img" src="@img/about-1.jpeg" alt="About image">
+					<img class="about__img" src="@img/about-3.jpeg" alt="About image">
+					<img class="about__img" src="@img/about-2.jpeg" alt="About image">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="tasks">
+		<div class="container">
+			<h2 class="tasks__title title">Основные задачи</h2>
+			<ul class="tasks__list">
+				<li class="tasks__item">
+					<p>Создание комфортных условий и повышение качества обслуживания клиентов</p>
+				</li>
+				<li class="tasks__item">
+					<p>Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового
+						оборудования и усиленной рекламы на рынке</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="projects">
+		<div class="container">
+			<h2 class="projects__title title">Наши проекты</h2>
+			<ul class="projects__list">
+				<li class="projects__item">
+					<img class="projects__item-img" src="@img/project-1.jpeg" alt="">
+					<div class="projects__item-info">
+						<div class="projects__item-content">
+							<h5 class="projects__item-title title title--bold">ДОСУГОВЫЙ ЦЕНТР</h5>
+							<a href="#" class="projects__item-link">
+								ПОДРОБНЕЕ
+								<svg width="24" height="24">
+									<use xlink:href="@img/icons/icons.svg#arrow-right"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="projects__item">
+					<img class="projects__item-img" src="@img/project-2.jpeg" alt="">
+					<div class="projects__item-info">
+						<div class="projects__item-content">
+							<h5 class="projects__item-title title title--bold">ДОСУГОВЫЙ ЦЕНТР</h5>
+							<a href="#" class="projects__item-link">
+								ПОДРОБНЕЕ
+								<svg width="24" height="24">
+									<use xlink:href="@img/icons/icons.svg#arrow-right"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="projects__item">
+					<img class="projects__item-img" src="@img/project-3.jpeg" alt="">
+					<div class="projects__item-info">
+						<div class="projects__item-content">
+							<h5 class="projects__item-title title title--bold">ДОСУГОВЫЙ ЦЕНТР</h5>
+							<a href="#" class="projects__item-link">
+								ПОДРОБНЕЕ
+								<svg width="24" height="24">
+									<use xlink:href="@img/icons/icons.svg#arrow-right"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="projects__item">
+					<img class="projects__item-img" src="@img/project-4.jpeg" alt="">
+					<div class="projects__item-info">
+						<div class="projects__item-content">
+							<h5 class="projects__item-title title title--bold">ДОСУГОВЫЙ ЦЕНТР</h5>
+							<a href="#" class="projects__item-link">
+								ПОДРОБНЕЕ
+								<svg width="24" height="24">
+									<use xlink:href="@img/icons/icons.svg#arrow-right"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="projects__item">
+					<img class="projects__item-img" src="@img/project-5.jpeg" alt="">
+					<div class="projects__item-info">
+						<div class="projects__item-content">
+							<h5 class="projects__item-title title title--bold">ДОСУГОВЫЙ ЦЕНТР</h5>
+							<a href="#" class="projects__item-link">
+								ПОДРОБНЕЕ
+								<svg width="24" height="24">
+									<use xlink:href="@img/icons/icons.svg#arrow-right"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<a href="#" class="projects__btn button button--dark">
+				ВСЕ ПРОЕКТЫ
+				<svg width="24" height="24">
+					<use xlink:href="@img/icons/icons.svg#arrow-right"></use>
+				</svg>
+			</a>
+		</div>
+	</section>
+	<section class="contacts">
+		<div class="container">
+			<h2 class="contacts__title title">Связаться с нами</h2>
+			<div class="contacts__inner">
+				<form action="/applications" class="contacts__form">
+					<input type="text" name="name" class="contacts__form-input" placeholder="Имя">
+					<input type="text" name="phone" class="contacts__form-input" placeholder="Номер телефона*" required>
+					<input type="text" name="email" class="contacts__form-input" placeholder="E-mail*" required>
+					<input type="text" name="offer" class="contacts__form-input" placeholder="Интересующий товар/услуга">
+					<textarea name="message" class="contacts__form-textarea" placeholder="Сообщение*" required></textarea>
+					<div class="contacts__form-agree contacts-form-agree">
+						<div class="contacts-form-agree__checkbox">
+							<input type="checkbox" name="agree" id="agree" class="contacts-form-agree__input" required>
+							<span class="contacts-form-agree__checkmark">
+								<svg width="13" height="10">
+									<use xlink:href="@img/icons/icons.svg#check"></use>
+								</svg>
+							</span>
+						</div>
+						<label for="agree" class="contacts-form-agree__label">
+							Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+						</label>
+					</div>
+					<button class="button button--dark">
+						ОТПРАВИТЬ
+						<svg width="24" height="24">
+							<use xlink:href="@img/icons/icons.svg#arrow-right"></use>
+						</svg>
+					</button>
+				</form>
+				<img class="contacts__img" src="@img/contacts-img.jpeg" alt="" />
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__top">
+				<div class="footer__col">
+					<a href="#">
+						<img src="@img/logo-light.png" alt="Logo">
+					</a>
+				</div>
+				<div class="footer__col-mid">
+					<div class="footer__col">
+						<h5 class="footer__title">Информация</h5>
+						<ul class="footer__list">
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Главная</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Галерея</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Проекты</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Сертификаты</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__list-link">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h5 class="footer__title">Контакты</h5>
+						<ul class="footer__list">
+							<li class="footer__list-item">
+								<img src="@img/icons/map.svg" alt="Map marker">
+								<a href="#" class="footer__list-link">
+									100000, Республика Казахстан, <br>
+									г. Караганда, ул. Телевизионная 10
+								</a>
+							</li>
+							<li class="footer__list-item">
+								<img src="@img/icons/phone.svg" alt="Phone">
+								<a href="tel:+380000000000" class="footer__list-link">+38 (000) 000 00 00</a>
+							</li>
+							<li class="footer__list-item">
+								<img src="@img/icons/mail.svg" alt="Envelope">
+								<a href="mailto:mail@gmail.com" class="footer__list-link">mail@gmail.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__col">
+					<h5 class="footer__title">Информация</h5>
+					<ul class="footer__social">
+						<li>
+							<a href="#" class="footer__social-link">
+								<img src="@img/icons/facebook.svg" alt="Facebook">
+							</a>
+						</li>
+						<li>
+							<a href="#" class="footer__social-link">
+								<img src="@img/icons/twitter.svg" alt="Twitter">
+							</a>
+						</li>
+						<li>
+							<a href="#" class="footer__social-link">
+								<img src="@img/icons/linked-in.svg" alt="Linked In">
+							</a>
+						</li>
+						<li>
+							<a href="#" class="footer__social-link">
+								<img src="@img/icons/pinterest.svg" alt="Pinterest">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<p class="footer__copy">&copy; 2019 Digital Project. Все права защищены.</p>
+			</div>
+		</div>
+	</footer>
+
+	@@include('html/_footer.html')
+
+	@@include('html/_js.html',{})
+</body>
+
+</html>

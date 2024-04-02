@@ -1,0 +1,162 @@
+.header {
+  &__container {
+    display: grid;
+    grid-template-columns: auto percent(770, $containerWidth);
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media (max-width: $mobile) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__logo {
+    width: 70px;
+    height: 40px;
+  }
+}
+
+.menu {
+  &__btn {
+    display: none;
+    @media (max-width: $mobile) {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 24px;
+      z-index: 11;
+      @media (any-hover: none) {
+        cursor: default;
+      }
+
+      span,
+      &::before,
+      &::after {
+        content: '';
+        transition: all 0.3s ease 0s;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $secondaryColor;
+      }
+
+      &::before {
+        top: 0;
+      }
+      &::after {
+        bottom: 0;
+      }
+      span {
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+      .menu-open & {
+        span {
+          transform: scale(0);
+        }
+
+        &::before {
+          top: 50%;
+          width: 100%;
+          transform: translate(0, -50%) rotate(-45deg);
+        }
+        &::after {
+          bottom: 50%;
+          width: 100%;
+          transform: translate(0, 50%) rotate(45deg);
+        }
+      }
+    }
+  }
+
+  &__body {
+    @media (max-width: $mobile) {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100vw;
+      height: 100vh;
+      padding: 100px 30px;
+      background-color: #fff;
+      overflow-y: scroll;
+      z-index: 10;
+      transition: left 0.3s ease-in-out;
+
+      .menu-open & {
+        left: 0;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    @include adaptiveValue('column-gap', 60, 20, $containerWidth, 768);
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      row-gap: 15px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    padding: 3px 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: calc(1em / 5);
+    text-transform: uppercase;
+
+    @media (max-width: $mobile) {
+      padding: 10px 5px;
+      font-size: 18px;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $secondaryColor;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    &--active {
+      &::before,
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+body {
+  background-color: #fff;
+  color: $primaryColor;
+  font-family: $fontFamily, sans-serif;
+  font-size: $fontSize + px;
+  font-weight: 300;
+  line-height: percent(25, $fontSize);
+  overflow-x: hidden;
+
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+    overscroll-behavior: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+[class*='__container'],
+[class*='container'] {
+  margin: 0 auto;
+  max-width: $containerWidth + px;
+  @if ($containerPadding > 0) {
+    padding: 0 math.div($containerPadding, 2) + px;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-mixed-spaces-and-tabs": "off",
+    "no-undef": "warn",
+    "node/no-unpublished-import": "off",
+    "no-empty": "off"
+  },
+  "globals": {
+    "app": "readonly"
+  }
+}
